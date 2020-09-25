@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo/style.css">
+    <title>Super Mercado PC</title>
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navegacion animacion-izq" id="Navbar" style="display:none">
+        <h3>Contenido</h3>
+        <i onclick="cerrarNavBar()">cerrar</i><br>
+        <a href="#">Inicio</a><br>
+        <a href="#">Productos</a><br>
+        <a href="#">Promocion</a><br>
+        <a href="#">Perfil</a><br>
+    </nav>
+
+    <!-- Cabecera -->
+    <header>
+        <i class="menu" onclick="abriNavbar()">Menu</i>
+        <div class="fila">
+            <div>
+                <svg viewBox="0 0 210 221" height="71mm" width="60mm">
+                    <path
+                       sodipodi:nodetypes="cccccccccccccccccccccccccccc"
+                       d="M 113.02625,2.7135319 C 103.15995,2.7327513 93.341088,4.0793378 83.833908,6.7171065 36.115311,19.956256 3.12772,63.451579 3.2479514,112.97253 3.3605712,159.25864 32.372823,200.13711 75.179299,215.90153 V 197.9874 153.02583 c 10.603298,10.19978 24.744398,15.8973 39.457161,15.8975 31.43393,-1.1e-4 56.91614,-25.48232 56.91625,-56.91625 2.7e-4,-31.434197 -25.48205,-56.91682 -56.91625,-56.916928 -31.4342,1.04e-4 -57.615299,27.926728 -57.615032,59.360928 5.4e-5,0.81495 0.716387,-0.8142 0.751435,0 h -0.751435 v 72.41744 C 35.168754,169.74627 21.540662,143.24537 21.406496,114.1817 21.21328,72.36795 48.98413,35.579845 89.250549,24.308534 129.08332,13.158905 171.48898,29.693358 193.26113,64.863463 l 14.38519,-8.59992 C 187.74964,22.983658 151.80024,2.638186 113.02625,2.7135319 Z m 1.26116,71.2325771 c 21.2133,-8.1e-5 38.4101,17.196713 38.41002,38.410011 8e-5,21.2133 -17.19672,38.4101 -38.41002,38.41002 -21.213301,8e-5 -38.410098,-17.19672 -38.410017,-38.41002 -7.6e-5,-21.213297 17.19672,-38.41009 38.410017,-38.410011 z m 80.04517,86.922131 c -13.21686,22.45438 -34.76847,37.67913 -58.90252,43.32976 l 5.10405,15.05695 c 27.59149,-7.07752 52.13499,-24.77551 67.38564,-50.56859 z"
+                       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.345671"
+                       id="path61"
+                    />
+               </svg>
+            </div>
+            <div class="centrar">
+                <h1>SuperMarket PC</h1>
+                <p>Con el <b>cariño</b> de siempre.</p>
+
+                <script>
+                    var fehca_actual = new Date();
+            
+                    var dia=fehca_actual.getDate();
+                    var mes=fehca_actual.getMonth()+1;
+                    var año=fehca_actual.getFullYear();
+                    var hora=fehca_actual.getHours();
+                    var min=fehca_actual.getMinutes();
+            
+            
+            
+                    document.write(dia+' / '+mes+' / '+año+'     '+hora+' : '+min);
+                </script>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div>
+
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="fila">
+        <div class="columna">
+            <div class="panelA">
+                <h3>1. click en Comprar</h3>
+                <i><img src="/recursos/click.png" alt=""></i>
+                <div style="padding-top: 30px;">
+                    <p>A un solo click</p>
+                    <p>Diseño intuitivo</p>
+                    <p>Facil de navegar</p>
+                </div>
+            </div>
+        </div>
+        <div class="columna">
+            <div class="panelA">
+                <h3>2. Destinar</h3>
+                <i><img src="/recursos/form.png" alt=""></i>
+                <div style="padding-top: 30px;">
+                    <p>Solo tu direccion</p>
+                    <p>Sientete seguro</p>
+                    <p>Protegemos tu identidad</p>
+                </div>
+            </div>
+        </div>
+        <div class="columna">
+            <div class="panelA">
+                <h3>3. Delivery</h3>
+                <i><img src="/recursos/delivery.png" alt=""></i>
+                <div style="padding-top: 30px;">
+                    <p>Taxis y MotoTaxis</p>
+                    <p>Entrega inmediata</p>
+                    <p>Transporte seguro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="cabecera">
+            <h2>Productos</h2>
+            <p>Todo lo que necesitas en tu tienda virtual.</p>
+        </div>
+        <div class="contenedorProducto">
+            <div>
+                <h3>higiene</h3>
+                <img src="/recursos/higiene-2.png" alt="">
+            </div>
+            <div>
+                <h3>Bebidas</h3>
+                <img src="/recursos/bebida.png" alt="">
+            </div>
+            <div>
+                <h3>Animales</h3>
+                <img src="/recursos/animales.png" alt="">
+            </div>
+            <div>
+                <h3>Lacteos</h3>
+                <img src="/recursos/lacteo.png" alt="">
+            </div>
+            <div>
+                <h3>Desayono</h3>
+                <img src="/recursos/desayuno.png" alt="">
+            </div>
+            <div>
+                <h3>Pizzas</h3>
+                <img src="/recursos/pizza.png" alt="">
+            </div>
+            <div>
+                <h3>Helados</h3>
+                <img src="/recursos/helado.png" alt="">
+            </div>
+            <div>
+                <h3>Pescaderia</h3>
+                <img src="/recursos/pescaderia.png" alt="">
+            </div>
+            <div>
+                <h3>Carniceria</h3>
+                <img src="/recursos/carniceria.png" alt="">
+            </div>
+            <div>
+                <h3>Huevos</h3>
+                <img src="/recursos/huevos.png" alt="">
+            </div>
+            <div>
+                <h3>Verduras</h3>
+                <img src="/recursos/verdura.png" alt="">
+            </div>
+            <div>
+                <h3>Frutas</h3>
+                <img src="/recursos/fruta.png" alt="">
+            </div>
+            <div>
+                <h3>Encurtidos</h3>
+                <img src="/recursos/encurtido.png" alt="">
+            </div>
+            <div>
+                <h3>Conservas</h3>
+                <img src="/recursos/enlatado.png" alt="">
+            </div>
+            <div>
+                <h3>Limpieza</h3>
+                <img src="/recursos/limpieza.png" alt="">
+            </div>
+            <div>
+                <h3>Cervezas</h3>
+                <img src="/recursos/cheva.png" alt="">
+            </div>
+            <div>
+                <h3>Panaderia</h3>
+                <img src="/recursos/panaderia.png" alt="">
+            </div>
+            <div>
+                <h3>Arroz/Pasta</h3>
+                <img src="/recursos/pasta.png" alt="">
+            </div>
+            <div>
+                <h3>Aceite</h3>
+                <img src="/recursos/aceite-2.png" alt="">
+            </div>
+            <div>
+                <h3>Cereales</h3>
+                <img src="/recursos/cereal.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="fila">
+        <div class="columna">
+            <h3>Nuestra Web... tu Web</h3>
+            <p>Si a las personas les gustas, te escucharán, 
+                pero si confían en ti, harán negocios contigo</p>
+            <p>En SuperMarket PC el cliente tiene la razon</p>
+        </div>
+        
+        
+        <div class="columna">
+            <!--Imagen-->
+        </div>
+        <div class="columna">
+            <div class="publicidadA">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cabecera">
+        <h2>Suscribete</h2>
+        <p><b>No te pierdas nada</b></p>
+        <p>Recibe descuentos y novedades sobre tus Productos</p>
+    </div>
+    <div class="fila">
+        <div class="columna">
+            <div class="panelB">
+                <div class="fondoVerde">
+                    <h3>Basico</h3>
+                </div>
+                <div class="fondoContorno">
+                    <p>2% de descuento</p>
+                </div>
+                <div class="fondoContorno">
+                    <p>5 Cupones Delivery</p>
+                </div>
+                <div class="fondoContorno">
+                    <p>No <b>Ads</b></p>
+                </div>
+                <div class="fondoContorno">
+                    <h3>$ 10</h3>
+                </div>
+                <div class="fondoContornoBoton">
+                    <a href="#" class="boton">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="columna">
+            <div class="panelB">
+                <div class="fondoLila">
+                    <h3>Premium</h3>
+                </div>
+                <div class="fondoContorno">
+                    <p>5% de descuento</p>
+                </div>
+                <div class="fondoContorno">
+                    <p>20 Cupones Delivery</p>
+                </div>
+                <div class="fondoContorno">
+                    <p>No <b>Ads</b></p>
+                </div>
+                <div class="fondoContorno">
+                    <h3>$ 50</h3>
+                </div>
+                <div class="fondoContornoBoton">
+                    <a href="#" class="boton">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function abriNavbar() {
+            var x = document.getElementById("Navbar");
+            x.style.width = "100%";
+            x.style.height = "100%";
+            x.style.fontSize = "40px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+            x.style.zIndex = "1";
+        }
+        function cerrarNavBar() {
+            document.getElementById("Navbar").style.display = "none";
+        }
+    </script>
+</body>
+</html>
