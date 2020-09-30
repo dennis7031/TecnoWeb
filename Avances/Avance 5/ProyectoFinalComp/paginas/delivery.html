@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo/style.css">
+    <script src="/javascript/codigo.js"></script>
+    <title>Delivery MarketPlace</title>
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navegacion animacion-izq centrar" id="Navbar" style="display:none">
+        <h3>Contenido</h3>
+        <ul class="menu">
+            <li>
+                <a href="#0" onclick="cerrarNavBar()">cerrar</a>
+            </li>
+            <li>
+                <a href="/home.html" onclick="cerrarNavBar()">Inicio</a>
+            </li>
+            <li>
+                <a href="/home.html" onclick="cerrarNavBar()">Productos</a>
+            </li>
+            <li>
+                <a href="/home.html" onclick="cerrarNavBar()">Promocion</a>
+            </li>
+        </ul>
+
+        <div class="modal" id="miModal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <form action="">
+                    <h2 style="text-align:center">Login! con red social o Manualmente</h2>
+                    <div class="fila">
+                      
+                
+                      <div class="columna">
+                        <a href="#" class="fb btn">
+                            Login con Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            Login con Twitter
+                        </a>
+                        <a href="#" class="google btn">
+                            Login con Google+
+                        </a>
+                      </div>
+
+                      <div class="columna">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                      </div>
+                      
+                    </div>
+                  </form>
+                  <div class="btn-registro">
+                    <div class="fila">
+                        <div class="columna">
+                          <a onclick="abrirReg()" href="#" style="color:white" class="btn">Registrate</a>
+                        </div>
+                        <div class="columna">
+                          <a href="#" style="color:white" class="btn">Olvidaste tu contraseña?</a>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            
+            <div class="formRegistro" id="miFormReg">
+                <form action="" class="formContenedor">
+                    <h2>Registro</h2>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button class="btn">Aceptar</button>
+                    <button class="btn cancelar" onclick="cerrarReg()">Cerrar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecera -->
+    <header id="inicio">
+        <div>
+            <i class="home" onclick="abriNavbar()" >
+                Menu
+            </i>
+            <input class="busqueda" type="text" name="search" placeholder="Buscar...">
+        </div>
+        
+        <div class="fila">
+            <div>
+                <svg viewBox="0 0 210 221" height="71mm" width="60mm">
+                    <path
+                       sodipodi:nodetypes="cccccccccccccccccccccccccccc"
+                       d="M 113.02625,2.7135319 C 103.15995,2.7327513 93.341088,4.0793378 83.833908,6.7171065 36.115311,19.956256 3.12772,63.451579 3.2479514,112.97253 3.3605712,159.25864 32.372823,200.13711 75.179299,215.90153 V 197.9874 153.02583 c 10.603298,10.19978 24.744398,15.8973 39.457161,15.8975 31.43393,-1.1e-4 56.91614,-25.48232 56.91625,-56.91625 2.7e-4,-31.434197 -25.48205,-56.91682 -56.91625,-56.916928 -31.4342,1.04e-4 -57.615299,27.926728 -57.615032,59.360928 5.4e-5,0.81495 0.716387,-0.8142 0.751435,0 h -0.751435 v 72.41744 C 35.168754,169.74627 21.540662,143.24537 21.406496,114.1817 21.21328,72.36795 48.98413,35.579845 89.250549,24.308534 129.08332,13.158905 171.48898,29.693358 193.26113,64.863463 l 14.38519,-8.59992 C 187.74964,22.983658 151.80024,2.638186 113.02625,2.7135319 Z m 1.26116,71.2325771 c 21.2133,-8.1e-5 38.4101,17.196713 38.41002,38.410011 8e-5,21.2133 -17.19672,38.4101 -38.41002,38.41002 -21.213301,8e-5 -38.410098,-17.19672 -38.410017,-38.41002 -7.6e-5,-21.213297 17.19672,-38.41009 38.410017,-38.410011 z m 80.04517,86.922131 c -13.21686,22.45438 -34.76847,37.67913 -58.90252,43.32976 l 5.10405,15.05695 c 27.59149,-7.07752 52.13499,-24.77551 67.38564,-50.56859 z"
+                       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.345671"
+                       id="path61"
+                    />
+               </svg>
+            </div>
+            <div class="centrar">
+                <h1 style="text-shadow: 2px 2px 4px #000000;">SuperMarket PC</h1>
+                <p style="text-shadow: 2px 2px 4px #000000;">Con el <b>cariño</b> de siempre.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="modal-contenido">
+            <form action="">
+                <div>
+                    <input type="text" name="username" placeholder="Nombre" required>
+                    <input type="text" name="username" placeholder="Direccion" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <label class="check">Taxi
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check">Mototaxi
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div style="margin-top: 30px;margin-bottom: 20px;" class="centrar">
+                    <a href="/home.html" class="boton">Aceptar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
