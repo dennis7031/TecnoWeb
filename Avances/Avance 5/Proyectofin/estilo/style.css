@@ -128,7 +128,7 @@ header {
 }
 
 .pImagen {
-  background-image: url(recursos/marketplace4.jpg);
+  background-image: url('../recursos/marketplace4.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
