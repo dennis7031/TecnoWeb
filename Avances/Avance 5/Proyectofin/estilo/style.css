@@ -114,7 +114,7 @@ header {
   border-radius: 25px;
   font-size: 16px;
   background-color: var(--colorClaro);
-  background-image: url('/recursos/iconlupa.svg');
+  background-image: url('recursos/iconlupa.svg');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   background-size: 1.5em;
@@ -128,7 +128,7 @@ header {
 }
 
 .pImagen {
-  background-image: url(/recursos/marketplace4.jpg);
+  background-image: url(recursos/marketplace4.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -403,9 +403,6 @@ input[type=submit]:hover {
 }
 
 /**/
-.contenedorDelivery {
-  
-}
 
 /**/
 .animacion-izq{
