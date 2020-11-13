@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Practica Uno</title>
+</head>
+<body>
+    <div>
+        <aside class="contenedor">
+            <h1>Logo</h1>
+            <a href="#">Cabecera</a>
+            <a href="#">Navegacion</a>
+            <a href="#">Seccion</a>
+            <a href="#">Pie de pagina</a>
+            <br>
+            <p>Seccion BOM</p>
+            <p>Primer cambio presionando el boton Creditos</p>
+            <button class="btnModoBlack" onclick="Creditos()">Creditos</button>
+        </aside>
+        <div class="principal">
+            <header>
+                <form class="fila">
+                    <input type="text" name="buscar" placeholder="buscar en Denni's Web" id="buscador">
+                </form>
+                <div class="fila">
+                    <div class="columna panel contenedor">
+                        <h2>Modo Oscuro</h2>
+                        <p>Con DOM puede usted activar el modo Oscuro. Activa el segundo cambio dando un click en el boton Modo Oscuro</p>
+                        <button class="btnModoBlack" id="btnActivarOscuro" onclick="ModoOscuro()">
+                            Activar el modo oscuro
+                        </button>
+                    </div>
+                    <div class="columna">
+                        <p id="reloj"></p>
+                        <p id="txtReloj">Practica Uno de la materia. En el que se pone en practica los conocimientos adquiridos respecto a los temas BOM y DOM implementos de javascript.  Por ejemplo este parrafo cambia y muestra la hora al presionar el boton RELOJ... Esa es una funcion BOM</p>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <button id="btnBuscador" onclick="AnimarBuscador()">Animar Buscador</button>
+                <button onclick="FullColor()">Full Color</button>
+                <button id="btnReloj" onclick="MostrarReloj()">Mostrar Reloj</button>
+                <button onclick="PantallaCompleta()">Full Screen</button>
+            </nav>
+            <main>
+                <section>
+                    <article class="contenedor fila">
+                        <div class="columna">
+                            <p id="escritura"></p>
+                        </div>
+                        <div class="columna">
+                            <button onclick="TxtAnimado()">Efecto escritura</button>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Proximamente con JQuery</h2>
+                    </article>
+                </section>
+                <section>
+                    <article>
+                        <h2>Proximamente con JQuery</h2>
+                    </article>
+                    <article>
+                        <h2>Proximamente con JQuery</h2>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <p>Universidad Privada Domingo Savio</p>
+                <p>Diseño Web 2</p>
+                <p>Autor: Dennis Orellana</p>
+                <a href="#">Facebook</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="Codigo.js"></script>
+</body>
+</html>
